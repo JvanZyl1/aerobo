@@ -1,7 +1,4 @@
-'''
-Adjusted sampling strategies
-FROM BOTORCH
-'''
+# Adapted from BoTorch (https://github.com/meta-pytorch/botorch), licensed under the MIT License.
 
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
