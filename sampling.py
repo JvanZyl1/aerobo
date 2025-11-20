@@ -22,7 +22,7 @@ from botorch.models.model import Model
 from botorch.utils.sampling import batched_multinomial
 from botorch.acquisition.acquisition import AcquisitionFunction
 from botorch.exceptions import UnsupportedError
-from botorch.utils.transforms import t_batch_mode_transform #, convert_to_target_pre_hook
+from botorch.utils.transforms import t_batch_mode_transform 
 from botorch.acquisition import ExpectedImprovement, ConstrainedExpectedImprovement
 
 import torch
@@ -383,7 +383,6 @@ class ConstrainedExpectedImprovement(AnalyticAcquisitionFunction):
         self.constraints = constraints
         self.register_buffer("best_f", torch.as_tensor(best_f))
         _preprocess_constraint_bounds(self, constraints=constraints)
-        #self.register_forward_pre_hook(convert_to_target_pre_hook)
 
     @t_batch_mode_transform(expected_q=1)
     def forward(self, X: Tensor) -> Tensor:
