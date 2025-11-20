@@ -2,38 +2,7 @@ import numpy as np
 import torch 
 
 class extend_benchmark_with_random_constraints:
-    """
-    Extend a given benchmark problem with additional input dimensions and random independent constraints
-    on the new dimensions while ensuring that the original optimum and feasible region remain unchanged.
 
-    Parameters:
-    -----------
-    benchmark_problem : dict
-        A dictionary representing the original benchmark problem with the following keys:
-        - 'f': callable, the original objective function f(y)
-        - 'c': callable or list of callables, the original constraints c(y) ≤ 0 (can be vector-valued)
-        - 'dim_input': int, the original input dimensionality d
-        - 'num_constraints': int, the original number of constraints m
-    
-    D_extra : int
-        The number of extra input dimensions to add (artificial dimensions).
-    
-    m_extra : int
-        The number of new random constraints to add in the extra dimensions.
-    
-    seed : int
-        Random seed for reproducibility.
-
-    Returns:
-    --------
-    extended_problem : dict
-        A dictionary with the extended problem that has the same keys as the original benchmark problem but
-        with extra input dimensions and constraints.
-        - 'f_extended': callable, the extended objective function f(Px)
-        - 'c_extended': callable or list of callables, the extended constraints
-        - 'dim_input': int, the extended input dimensionality (d + D_extra)
-        - 'num_constraints': int, the extended number of constraints (m + m_extra)
-    """
     def __init__(
             self,
             M, # original model
