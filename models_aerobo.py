@@ -1,3 +1,4 @@
+# Adapted from BoTorch (https://github.com/meta-pytorch/botorch), licensed under the MIT License.
 
 from __future__ import annotations
 
