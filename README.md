@@ -1,7 +1,7 @@
 # aerobo
 Autoencoder-enhanced Joint Input-Output Dimensionality Reduction for Constrained Bayesian Optimisation
 
-Lightweight README for the bo_autoencoder project. This repository contains code for Bayesian optimization experiments (various algorithms and benchmarks), utilities for sampling / plotting, and result analysis used in the BOinAT project.
+Implementation of the method described in Autoencoder-enhanced joint dimensionality reduction for constrained Bayesian optimisation (DOI: 10.1088/2632-2153/ae0efe)
 
 ## Quick summary
 - Implements AeroBO and utilities to run experiments.
