@@ -1,7 +1,7 @@
 # aerobo
 Autoencoder-enhanced Joint Input-Output Dimensionality Reduction for Constrained Bayesian Optimisation
 
-Implementation of the method described in Autoencoder-enhanced joint dimensionality reduction for constrained Bayesian optimisation (DOI: 10.1088/2632-2153/ae0efe)
+Implementation of the method described in [Autoencoder-enhanced joint dimensionality reduction for constrained Bayesian optimisation](https://iopscience.iop.org/article/10.1088/2632-2153/ae0efe) (DOI: 10.1088/2632-2153/ae0efe)
 
 ## Quick summary
 - Implements AeroBO and utilities to run experiments.
