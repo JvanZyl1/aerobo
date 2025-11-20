@@ -198,8 +198,8 @@ if __name__ == '__main__':
         #'pressure_vessel',
         #'weldedbeam',
         #'tensioncompressionstring',
-        #'rover',
-        'keane'
+        'rover',
+        #'keane'
         ]
 
     for benchmark_name in benchmark_list:
