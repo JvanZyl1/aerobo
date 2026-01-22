@@ -296,7 +296,3 @@ if __name__ == '__main__':
             weighted_training   =True,
             lookback            =None
             )
-
-
-
-
